@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>LojaIgor</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <description>Cadastro de Clientes</description>
+    <display-name>Cliente</display-name>
+    <servlet-name>Cliente</servlet-name>
+    <servlet-class>presentation.clienteController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Cliente</servlet-name>
+    <url-pattern>/Clientes</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Cadastro de Produtos</description>
+    <display-name>Produto</display-name>
+    <servlet-name>Produto</servlet-name>
+    <servlet-class>presentation.produtoController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Produto</servlet-name>
+    <url-pattern>/Produtos</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>Efetuar vendas</description>
+    <display-name>Venda</display-name>
+    <servlet-name>Venda</servlet-name>
+    <servlet-class>presentation.vendaController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Venda</servlet-name>
+    <url-pattern>/Venda</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>menuController</display-name>
+    <servlet-name>menuController</servlet-name>
+    <servlet-class>presentation.menuController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>menuController</servlet-name>
+    <url-pattern>/menu</url-pattern>
+  </servlet-mapping>
+</web-app>
